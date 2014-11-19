@@ -62,7 +62,7 @@ require_once($langfile);
 				{
 					if (isset($personal['phone_number']))
 					{
-						echo $personal['phone_number'];
+						echo '<a href="tel:'.$personal['phone_number'].'">'.$personal['phone_number'].'</a>';
 					}
 					if (isset($personal['phone_number']) && isset($personal['email_address']))
 					{
@@ -79,7 +79,7 @@ require_once($langfile);
 				<?php
 				if (isset($personal['phone_number']))
 				{
-					echo $personal['phone_number'];
+					echo '<a href="tel:'.$personal['phone_number'].'">'.$personal['phone_number'].'</a>';
 				}
 				if (isset($personal['phone_number']) && isset($personal['email_address']))
 				{
@@ -137,7 +137,7 @@ require_once($langfile);
 				
 				<?php if (isset($personal['phone_number'])) { ?>
 				<div><span class="title"><?php echo $lang['phone']; ?></span><br />
-				<span class="subtitle"><?php echo($personal['phone_number']); ?></span></div>
+				<span class="subtitle"><a href="tel:<?php echo($personal['phone_number']); ?>"><?php echo($personal['phone_number']); ?></a></span></div>
 				<?php } ?>
 				
 				<?php if (isset($personal['email_address'])) { ?>

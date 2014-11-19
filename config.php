@@ -4,7 +4,7 @@
 // Let's start with some basic info.  You must include your full name, but if you don't want to include your phone number or email address you can just delete those lines entirely.
 $personal['first_name']= 'Héctor A.';
 $personal['last_name'] = 'Gómez Reyes';
-$personal['phone_number'] = '+528110388869';
+$personal['phone_number'] = '+528117326740';
 $personal['email_address'] = 'hector.agr@gmail.com';
 $settings['lang'] = isset($_GET['lang'])?$_GET['lang']:"en";
 // Now let's add any social media pages you've created and want to share.  You can add whatever you want by following the format below.  The first item you add is the name of the social media site, and the second item you add is the URL to 
@@ -41,13 +41,17 @@ function setEnglish(){
 	global $skills;
 	global $education;
 	global $awards;
-	$work_history[] = array('July 2013 - Present',
+	$work_history[] = array('August 2014 - Present',
+							'Web UI Developer',
+							'Softtek (<a href="www.softtek.com">www.softtek.com</a>)',
+							'I am currently on a project for different car companies rewriting sites to be responsive. 
+							The projects are in different technologies, although I work mostly with HTML, CSS and jQuery.');
+	$work_history[] = array('July 2013 - August 2014',
 							'PHP Jr. Developer',
 							'Metodika (<a href="www.metodika.mx">www.metodika.mx</a>)',
-							'I have participated in different projects, some on my own others as a team. 
-							One of them was adding functionalities for a Local Televesion company website. 
-							I also wrote system modules for White pages websites, we create content administration tools for dynamic websites.
-							And if the customer wants we design responsive websites or mobile focused. ');
+							'I participated in different projects. 
+							I wrote system modules for White pages websites, we created content administration tools for dynamic websites.
+							We design responsive websites or mobile focused. I also worked in some mobile apps with cross-platform technologies.');
 	$work_history[] = array('April 2013',
 							'Freelance',
 							'Pressta.me (<a href="https://apps.facebook.com/Presstame/">https://apps.facebook.com/Presstame/</a>)',
@@ -89,9 +93,9 @@ function setEnglish(){
 					  </ul>');
 	$skills[] = array('Web development', 
 					  '<ul style="list-style-type:none">
-					  	<li>Front-end: HTML, CSS, JavaScript, JQuery</li>
-					  	<li>Frameworks: MVC (pattern), CodeIgniter, Smarty, Bootstrap</li>
-					  	<li>Tools: MAMP, XAMPP, MySQL Workbench, Aptana, TortoiseSVN, Git Hub</li>
+					  	<li>Front-end: HTML, CSS, JavaScript, JQuery, Media queries, </li>
+					  	<li>Frameworks: MVC (pattern), CodeIgniter, Smarty, Bootstrap, Laravel</li>
+					  	<li>Tools: MAMP, XAMPP, MySQL Workbench, Aptana, TortoiseSVN, GitHub, TFS, SVN</li>
 					   </ul>');
 	$skills[] = array('Operating Systems', 
 					   '<ul style="list-style-type:none">
@@ -116,7 +120,12 @@ function setSpanish(){
 	global $skills;
 	global $education;
 	global $awards;
-	$work_history[] = array('Julio 2013 - Actualidad',
+	$work_history[] = array('Agosto 2014 - Presente',
+							'Desarrollador Web UI',
+							'Softtek (<a href="www.softtek.com">www.softtek.com</a>)',
+							'Actualmente trabajo en proyectos para diferetnes compañías de automoviles que buscan que sus sitios sean responsivos. 
+							Los proyectos abarcan diferentes tecnologías, aunque trabajo en su mayoría con HTML, CSS y jQuery.');
+	$work_history[] = array('Julio 2013 - Agosto 2014',
 							'Desarrollador PHP Jr.',
 							'Metodika (<a href="www.metodika.mx">www.metodika.mx</a>)',
 							'He participado en varios proyectos. Algunos yo solo, otros en equipo.
